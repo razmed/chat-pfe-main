@@ -80,7 +80,7 @@ if (isset($_POST["submit"])) {
             $execute_status_command = mysqli_query($connection_String, $update_status_command);
 
 
-            header("Location:./Dashboard/Main_Dashboard.php");
+            header("Location:./Main_Dashboard.php");
 
         } else {
 
@@ -108,7 +108,7 @@ if (isset($_POST["submit"])) {
             setcookie("reversed_selected_Username_Table_uploads", "dummy_text", time() + (86400 *
                 30));
 
-            header("Location:./Dashboard/Main_Dashboard.php");
+            header("Location:./Main_Dashboard.php");
         }
 
     } else {
